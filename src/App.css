@@ -1,0 +1,112 @@
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #868c8f;
+}
+
+p {
+  font-size: 16px;
+  color: #bec4c8;
+}
+
+body {
+  background-color: #eceff1;
+}
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263338;
+  color: white;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+header div img {
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+}
+
+section div div:first-child {
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+  flex-direction: row;
+}
+
+section div div:not(:first-child) {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+  padding: 0 15px;
+  height: 30px;
+  align-items: center;
+}
+
+section div div:not(:first-child) p {
+  flex: 1;
+}
+
+section div div:not(:first-child) p:last-child {
+  text-align: end;
+}
+section div div:not(:first-child) h4 {
+  flex: 3;
+}
+
+section div div:nth-child(even):not(:first-child) {
+  background-color: white;
+}
+section div div:nth-child(odd):not(:first-child) {
+  background-color: #f7f7f7;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-self: flex-end;
+  margin-right: 15px;
+  color: #868c8f;
+}
